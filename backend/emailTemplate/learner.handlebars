@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .button {
+      background: #2fc9c5;
+      width: 100%;
+      border: 2px solid #20a4a0;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 2px 0 #20a4a0;
+      transition: 0.3s;
+      margin-bottom: 30px;
+      height: 40px;
+      font-family: "Lato", serif;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 36px;
+      text-align: center;
+      color: #fafeff !important;
+    }
+
+    .button:hover {
+      cursor: pointer;
+      background: #38bcb9;
+    }
+
+    .button:active {
+      box-shadow: none;
+      transform: translateY(2px), translateZ(0);
+    }
+
+    .mainTableWrap {
+      border-collapse: collapse;
+      table-layout: fixed;
+      border-spacing: 0;
+      -mso-table-lspace: 0pt;
+      -mso-table-rspace: 0pt;
+      vertical-align: top;
+      min-width: 320px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      width: 100%;
+    }
+
+    .mainTableWraptd {
+      word-break: break-word;
+      border-collapse: collapse !important;
+      vertical-align: top;
+    }
+
+    .mainDivWrap {
+      margin: 0 auto;
+      min-width: 320px;
+      max-width: 600px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      background-color: transparent;
+    }
+    img + div{
+      display: none;
+    }
+
+    @media (max-width: 550px) {
+      .heading {
+        font-size: 30px !important;
+      }
+
+      .m-0 {
+        margin: 0 !important;
+      }
+
+      .ml-0 {
+        margin-left: 0px !important;
+      }
+
+      .sub-heading {
+        font-size: 20px !important;
+        margin-bottom: 5px !important;
+      }
+
+      .para {
+        font-size: 16px !important;
+        margin-bottom: 15px !important;
+      }
+
+      .li-bar {
+        margin-right: 14px !important;
+        padding-bottom: 40px !important;
+      }
+
+      .p-20 {
+        padding: 20px !important;
+      }
+
+      .ml-10 {
+        margin-left: 10px !important;
+      }
+
+      .mobileHeight {
+        height: 33px !important;
+        width: 33px !important;
+        min-width: 33px !important;
+        min-height: 33px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table cellspacing="0" cellpadding="0" class="mainTableWrap" background="#ffffff">
+    <tbody>
+      <tr style="vertical-align: top">
+        <td class="mainTableWraptd">
+          <div class="mainDivWrap">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td align="left" bgcolor="#f7f7f7">
+                    <div class="p-20" style="padding-bottom: 0">
+                      <div style="margin-bottom: 30px padding: 40px 50px;">
+                        <img src="https://cascade-content.s3.amazonaws.com/resumes/paddleboatLogo.png"
+                          alt="paddleboatLogo" width="180" />
+                          <div class="PaddleBoatLogoText">
+                              <h1>PaddleBoat</h1>
+                          </div>
+                      </div>
+                      <div style="padding-bottom: 0; padding: 40px 50px;">
+                      <h1 class="heading" style="
+                            font-family: 'Lato', sans-serif;
+                            font-weight: 700;
+                            font-size: 36px;
+                            line-height: 42px;
+                            color: #1f1f1f;
+                            margin: 0;
+                            margin-bottom: 40px;
+                          ">
+                        Hey
+                        <span style="color: #20a4a0">{{name}}</span>,<br />Welcome Aboard!
+                      </h1>
+                      <div style="margin-bottom: 40px">
+                        <img src="https://cascade-content.s3.ap-south-1.amazonaws.com/resumes/manWorking.png"
+                          alt="learner" width="300" />
+                      </div>
+                      <p style="
+                            font-family: 'Source Sans Pro', sans-serif;
+                            
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #7e7e7e;
+                            margin-bottom: 22px;
+                          ">
+                        <span style="font-weight: 700">{{company}}</span>
+                        has invited you to join PaddleBoat. Begin your journey
+                        by signing up on our platform!
+                      </p>
+                      <div>
+                        <a href="{{link}}" style="text-decoration: none;"> <div class="button">Let's Start</div></a>
+                      </div>
+                      <p style="
+                            font-family: 'Source Sans Pro', sans-serif;
+                            
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #7e7e7e;
+                            margin-bottom: 60px;
+                          ">
+                        If you have any questions, you can mail your admin at
+                        <a href="mailto:admin@outlook.com" style="color: #41bbff">admin@outlook.com</a>
+                      </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td align="left" bgcolor="#FFEACF">
+                    <div class="p-20" style="padding: 40px">
+                      <h1 class="heading" style="
+                            font-family: 'Lato', sans-serif;
+                            font-weight: 700;
+                            font-size: 42px;
+                            line-height: 48px;
+                            color: #f19a27;
+                            text-align: left;
+                            margin: 0;
+                            margin-bottom: 30px;
+                          ">
+                        Begin your Journey!
+                      </h1>
+                      <div style="width: 100%; margin-bottom: 30px">
+                        <img src="https://cascade-content.s3.ap-south-1.amazonaws.com/resumes/learnerJourney.png"
+                          alt="learner" width="350" style="margin-left: 35px" class="m-0" />
+                      </div>
+                      <p style="
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #f19a27;
+                            margin: 0;
+                            margin-bottom: 40px;
+                          ">
+                        <span style="font-weight: 700">As a Learner</span>,
+                        you'll stay up to speed in your organization by
+                        completing interactive content curated for you!
+                      </p>
+                      <h1 class="heading ml-0" style="
+                            margin: 0;
+                            margin-bottom: 40px;
+                            margin-left: 20px;
+                            font-family: 'Lato', sans-serif;
+                            font-weight: 700;
+                            font-size: 42px;
+                            line-height: 48px;
+                            color: #f19a27;
+                          ">
+                        Perks Of Your Role!
+                      </h1>
+                      <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                        <tbody>
+                          <tr>
+                            <td align="left" style="margin-left: 15px">
+                              <div>
+                                <div style="display: flex">
+                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody style="display: flex">
+                                      <tr>
+                                        <td align="center" valign="middle" class="mobileHeight" style="
+                                              background: #ffffff;
+                                              border: 4.18848px solid #f19a27;
+                                              width: 38px;
+                                              height: 38px;
+                                              border-radius: 50%;
+                                              font-family: 'Lato', sans-serif;
+                                              font-weight: 700;
+                                              font-size: 16.7539px;
+                                              line-height: 20px;
+                                              text-align: justify;
+                                              color: #f19a27;
+                                            ">
+                                          <center>1</center>
+                                        </td>
+                                        <td class="li-bar" style="
+                                              border-right: 6px solid #fca76a;
+                                              display: grid;
+                                              margin-right: 17px;
+                                              padding-bottom: 16px;
+                                            ">
+                                          &nbsp;<br />&nbsp;<br />
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <div style="margin-left: 20px" class="ml-10">
+                                            <h2 class="sub-heading" style="
+                                                  margin: 0;
+                                                  margin-bottom: 10px;
+                                                  font-family: 'Lato', sans-serif;
+                                                  margin-top: 4px;
+                                                  font-weight: 700;
+                                                  font-size: 24px;
+                                                  line-height: 30px;
+                                                  color: #f19a27;
+                                                ">
+                                              Exploration Awaits
+                                            </h2>
+                                            <p class="para" style="
+                                                  margin: 0;
+                                                  font-family: 'Source Sans Pro',
+                                                    sans-serif;
+                                                  
+                                                  font-weight: 400;
+                                                  font-size: 18px;
+                                                  line-height: 24px;
+                                                  color: #f19a27;
+                                                  margin-bottom: 25px;
+                                                ">
+                                              Discover content that matches
+                                              your learning needs
+                                            </p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div style="display: flex">
+                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody style="display: flex">
+                                      <tr>
+                                        <td align="center" valign="middle" class="mobileHeight" style="
+                                              background: #ffffff;
+                                              border: 4.18848px solid #f19a27;
+                                              width: 38px;
+                                              height: 38px;
+                                              border-radius: 50%;
+                                              font-family: 'Lato', sans-serif;
+                                              font-weight: 700;
+                                              font-size: 16.7539px;
+                                              line-height: 20px;
+                                              text-align: justify;
+                                              color: #f19a27;
+                                            ">
+                                          <center>2</center>
+                                        </td>
+                                        <td class="li-bar" style="
+                                              border-right: 6px solid #fca76a;
+                                              display: grid;
+                                              margin-right: 17px;
+                                              padding-bottom: 16px;
+                                            ">
+                                          &nbsp;<br />&nbsp;<br />
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <div style="margin-left: 20px" class="ml-10">
+                                            <h2 class="sub-heading" style="
+                                                  margin: 0;
+                                                  margin-bottom: 10px;
+                                                  font-family: 'Lato', sans-serif;
+                                                  margin-top: 4px;
+                                                  font-weight: 700;
+                                                  font-size: 24px;
+                                                  line-height: 30px;
+                                                  color: #f19a27;
+                                                ">
+                                              Visibility on Upskilling
+                                            </h2>
+                                            <p class="para" style="
+                                                  margin: 0;
+                                                  font-family: 'Source Sans Pro',
+                                                    sans-serif;
+                                                  
+                                                  font-weight: 400;
+                                                  font-size: 18px;
+                                                  line-height: 24px;
+                                                  color: #f19a27;
+                                                  margin-bottom: 25px;
+                                                ">
+                                              Showcase newly acquired skills on your Profile page
+                                            </p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div style="display: flex">
+                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody style="display: flex">
+                                      <tr>
+                                        <td align="center" valign="middle" class="mobileHeight" style="
+                                              background: #ffffff;
+                                              border: 4.18848px solid #f19a27;
+                                              width: 38px;
+                                              height: 38px;
+                                              border-radius: 50%;
+                                              font-family: 'Lato', sans-serif;
+                                              font-weight: 700;
+                                              font-size: 16.7539px;
+                                              line-height: 20px;
+                                              text-align: justify;
+                                              color: #f19a27;
+                                            ">
+                                          <center>3</center>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>
+                                          <div style="margin-left: 20px" class="ml-10">
+                                            <h2 class="sub-heading" style="
+                                                  margin: 0;
+                                                  margin-bottom: 10px;
+                                                  font-family: 'Lato', sans-serif;
+                                                  margin-top: 4px;
+                                                  font-weight: 700;
+                                                  font-size: 24px;
+                                                  line-height: 30px;
+                                                  color: #f19a27;
+                                                ">
+                                              Cross-device Experience
+                                            </h2>
+                                            <p class="para" style="
+                                                  margin: 0;
+                                                  font-family: 'Source Sans Pro',
+                                                    sans-serif;
+                                                  
+                                                  font-weight: 400;
+                                                  font-size: 18px;
+                                                  line-height: 24px;
+                                                  color: #f19a27;
+                                                  margin-bottom: 25px;
+                                                ">
+                                              Engage via laptop or mobile at your leisure anywhere, anytime
+                                            </p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <div class="p-20" style="padding: 55px 0;background: #DFF9FF;">
+                      <div style="margin-bottom: 20px;">
+                        <img src="https://cascade-content.s3.amazonaws.com/resumes/paddleboatLogo.png" alt="paddleboat"
+                          style="display:block; margin:0 auto;">
+                      </div>
+                      <h2 class="sub-heading"
+                        style="margin: 0;margin-bottom: 10px;font-family: 'Lato', sans-serif;font-weight: 700;font-size: 25.6307px;line-height: 31px;text-align: center;color: #1F1F1F;">
+                        Looking for more information?</h2>
+                      <div style="text-align: center;" class="sub-heading">
+                        <a href="mailto:ask@padboat.com" class="sub-heading"
+                          style="font-weight: 700;color: #1daf87;position: relative;text-decoration: none;box-shadow: inset 0 -2px 0 0 #dff9ff,inset 0 -10px 0 0 #95ebff!important;font-size: 24px;line-height: 32px;font-family: 'Lato', sans-serif;">ask@padboat.com</a>
+                      </div>
+
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
